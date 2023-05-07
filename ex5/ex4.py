@@ -31,7 +31,8 @@ def get_persons_by_email(email):
     raise ValueError("No person with this email")
 
 # Adaugam persoanele
-add_pearsons()
 
-# Test function - get_persons_by_email
-print(get_persons_by_email("email1@ocw.pub.ro").name)
+def generate_database():
+    add_pearsons()
+    return persons
+
